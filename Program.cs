@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Typer.Forms;
 
 namespace Typer
 {
@@ -13,7 +14,7 @@ namespace Typer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain()); //Main());//FrmSetting());//
+            Application.Run(new Forms.FrmMain()); //Main());//FrmSetting());//
         }
     }
 }
