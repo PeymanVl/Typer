@@ -5,12 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Bunifu.Framework.UI;
+
 using Typer.Classes;
 
 namespace Typer.Forms
 {
-    public partial class FrmEnglish : BunifuForm
+    public partial class FrmEnglish : Form
     {
         public FrmEnglish()
         {
@@ -21,9 +21,9 @@ namespace Typer.Forms
             _secound = decimal.ToInt32(Setting.Time) * 60;
             FillText();
         }
-        private void NewStart(RichTextBox Words, RichTextBox Input)
+        private void NewStart(RichTextBox words, RichTextBox Input)
         {
-            Words.Text = string.Empty;
+            words.Text = string.Empty;
             GetWords();
             CurrectCounter = IncurrectCounter = 0;
             _secound = decimal.ToInt32(Setting.Time) * 60;
@@ -34,10 +34,10 @@ namespace Typer.Forms
             _firsttime = false;
             Input.Clear();
             _firsttime = true;
-            Words.Select(0, _randomedWords[_index].Length);
-            using (var f = new Font(Words.Font, FontStyle.Underline))
+            words.Select(0, _randomedWords[_index].Length);
+            using (var f = new Font(words.Font, FontStyle.Underline))
             {
-                Words.SelectionFont = f;
+                words.SelectionFont = f;
                 //txtWords.SelectionBackColor = Color.DimGray;
             }
 

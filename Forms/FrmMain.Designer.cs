@@ -28,132 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btFarsi = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btEnglish = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuGradientPanel1.SuspendLayout();
+            this.btStart = new System.Windows.Forms.Button();
+            this.gbWordTypes = new System.Windows.Forms.GroupBox();
+            this.rbAdvance = new System.Windows.Forms.RadioButton();
+            this.rbSimple = new System.Windows.Forms.RadioButton();
+            this.rbText = new System.Windows.Forms.RadioButton();
+            this.gbLanguage = new System.Windows.Forms.GroupBox();
+            this.rbFrench = new System.Windows.Forms.RadioButton();
+            this.rbPersian = new System.Windows.Forms.RadioButton();
+            this.rbEnglish = new System.Windows.Forms.RadioButton();
+            this.gbWordTypes.SuspendLayout();
+            this.gbLanguage.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuGradientPanel1
+            // btStart
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.btFarsi);
-            this.bunifuGradientPanel1.Controls.Add(this.btEnglish);
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Maroon;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.WhiteSmoke;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.SystemColors.Window;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.SystemColors.MenuHighlight;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(566, 256);
-            this.bunifuGradientPanel1.TabIndex = 0;
+            this.btStart.Location = new System.Drawing.Point(292, 225);
+            this.btStart.Name = "btStart";
+            this.btStart.Size = new System.Drawing.Size(89, 34);
+            this.btStart.TabIndex = 0;
+            this.btStart.Text = "Start";
+            this.btStart.UseVisualStyleBackColor = true;
+            this.btStart.Click += new System.EventHandler(this.BtStart_Click);
             // 
-            // btFarsi
+            // gbWordTypes
             // 
-            this.btFarsi.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btFarsi.BackColor = System.Drawing.Color.Maroon;
-            this.btFarsi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btFarsi.BorderRadius = 0;
-            this.btFarsi.ButtonText = "فارسی";
-            this.btFarsi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btFarsi.DisabledColor = System.Drawing.Color.Gray;
-            this.btFarsi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFarsi.Iconcolor = System.Drawing.Color.Transparent;
-            this.btFarsi.Iconimage = ((System.Drawing.Image)(resources.GetObject("btFarsi.Iconimage")));
-            this.btFarsi.Iconimage_right = null;
-            this.btFarsi.Iconimage_right_Selected = null;
-            this.btFarsi.Iconimage_Selected = null;
-            this.btFarsi.IconMarginLeft = 0;
-            this.btFarsi.IconMarginRight = 0;
-            this.btFarsi.IconRightVisible = true;
-            this.btFarsi.IconRightZoom = 0D;
-            this.btFarsi.IconVisible = true;
-            this.btFarsi.IconZoom = 90D;
-            this.btFarsi.IsTab = false;
-            this.btFarsi.Location = new System.Drawing.Point(106, 92);
-            this.btFarsi.Name = "btFarsi";
-            this.btFarsi.Normalcolor = System.Drawing.Color.Maroon;
-            this.btFarsi.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btFarsi.OnHoverTextColor = System.Drawing.Color.White;
-            this.btFarsi.selected = false;
-            this.btFarsi.Size = new System.Drawing.Size(145, 59);
-            this.btFarsi.TabIndex = 1;
-            this.btFarsi.Text = "فارسی";
-            this.btFarsi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btFarsi.Textcolor = System.Drawing.Color.White;
-            this.btFarsi.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFarsi.Click += new System.EventHandler(this.BtFarsi_Click);
+            this.gbWordTypes.Controls.Add(this.rbText);
+            this.gbWordTypes.Controls.Add(this.rbSimple);
+            this.gbWordTypes.Controls.Add(this.rbAdvance);
+            this.gbWordTypes.Location = new System.Drawing.Point(12, 12);
+            this.gbWordTypes.Name = "gbWordTypes";
+            this.gbWordTypes.Size = new System.Drawing.Size(369, 97);
+            this.gbWordTypes.TabIndex = 1;
+            this.gbWordTypes.TabStop = false;
+            this.gbWordTypes.Text = "Word Types";
             // 
-            // btEnglish
+            // rbAdvance
             // 
-            this.btEnglish.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btEnglish.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btEnglish.BorderRadius = 0;
-            this.btEnglish.ButtonText = "English";
-            this.btEnglish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEnglish.DisabledColor = System.Drawing.Color.Gray;
-            this.btEnglish.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEnglish.Iconcolor = System.Drawing.Color.Transparent;
-            this.btEnglish.Iconimage = ((System.Drawing.Image)(resources.GetObject("btEnglish.Iconimage")));
-            this.btEnglish.Iconimage_right = null;
-            this.btEnglish.Iconimage_right_Selected = null;
-            this.btEnglish.Iconimage_Selected = null;
-            this.btEnglish.IconMarginLeft = 0;
-            this.btEnglish.IconMarginRight = 0;
-            this.btEnglish.IconRightVisible = true;
-            this.btEnglish.IconRightZoom = 0D;
-            this.btEnglish.IconVisible = true;
-            this.btEnglish.IconZoom = 90D;
-            this.btEnglish.IsTab = false;
-            this.btEnglish.Location = new System.Drawing.Point(310, 92);
-            this.btEnglish.Name = "btEnglish";
-            this.btEnglish.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btEnglish.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btEnglish.OnHoverTextColor = System.Drawing.Color.White;
-            this.btEnglish.selected = false;
-            this.btEnglish.Size = new System.Drawing.Size(145, 59);
-            this.btEnglish.TabIndex = 0;
-            this.btEnglish.Text = "English";
-            this.btEnglish.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btEnglish.Textcolor = System.Drawing.Color.White;
-            this.btEnglish.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEnglish.Click += new System.EventHandler(this.BtEnglish_Click);
+            this.rbAdvance.AutoSize = true;
+            this.rbAdvance.Location = new System.Drawing.Point(25, 39);
+            this.rbAdvance.Name = "rbAdvance";
+            this.rbAdvance.Size = new System.Drawing.Size(71, 19);
+            this.rbAdvance.TabIndex = 0;
+            this.rbAdvance.Text = "Advance";
+            this.rbAdvance.UseVisualStyleBackColor = true;
             // 
-            // bunifuDragControl1
+            // rbSimple
             // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.bunifuGradientPanel1;
-            this.bunifuDragControl1.Vertical = true;
+            this.rbSimple.AutoSize = true;
+            this.rbSimple.Checked = true;
+            this.rbSimple.Location = new System.Drawing.Point(112, 39);
+            this.rbSimple.Name = "rbSimple";
+            this.rbSimple.Size = new System.Drawing.Size(61, 19);
+            this.rbSimple.TabIndex = 0;
+            this.rbSimple.TabStop = true;
+            this.rbSimple.Text = "Simple";
+            this.rbSimple.UseVisualStyleBackColor = true;
+            // 
+            // rbText
+            // 
+            this.rbText.AutoSize = true;
+            this.rbText.Location = new System.Drawing.Point(192, 39);
+            this.rbText.Name = "rbText";
+            this.rbText.Size = new System.Drawing.Size(46, 19);
+            this.rbText.TabIndex = 0;
+            this.rbText.Text = "Text";
+            this.rbText.UseVisualStyleBackColor = true;
+            // 
+            // gbLanguage
+            // 
+            this.gbLanguage.Controls.Add(this.rbFrench);
+            this.gbLanguage.Controls.Add(this.rbPersian);
+            this.gbLanguage.Controls.Add(this.rbEnglish);
+            this.gbLanguage.Location = new System.Drawing.Point(12, 115);
+            this.gbLanguage.Name = "gbLanguage";
+            this.gbLanguage.Size = new System.Drawing.Size(369, 97);
+            this.gbLanguage.TabIndex = 1;
+            this.gbLanguage.TabStop = false;
+            this.gbLanguage.Text = "Language";
+            // 
+            // rbFrench
+            // 
+            this.rbFrench.AutoSize = true;
+            this.rbFrench.Location = new System.Drawing.Point(192, 39);
+            this.rbFrench.Name = "rbFrench";
+            this.rbFrench.Size = new System.Drawing.Size(61, 19);
+            this.rbFrench.TabIndex = 0;
+            this.rbFrench.Text = "French";
+            this.rbFrench.UseVisualStyleBackColor = true;
+            // 
+            // rbPersian
+            // 
+            this.rbPersian.AutoSize = true;
+            this.rbPersian.Location = new System.Drawing.Point(112, 39);
+            this.rbPersian.Name = "rbPersian";
+            this.rbPersian.Size = new System.Drawing.Size(63, 19);
+            this.rbPersian.TabIndex = 0;
+            this.rbPersian.Text = "Persian";
+            this.rbPersian.UseVisualStyleBackColor = true;
+            // 
+            // rbEnglish
+            // 
+            this.rbEnglish.AutoSize = true;
+            this.rbEnglish.Checked = true;
+            this.rbEnglish.Location = new System.Drawing.Point(25, 39);
+            this.rbEnglish.Name = "rbEnglish";
+            this.rbEnglish.Size = new System.Drawing.Size(63, 19);
+            this.rbEnglish.TabIndex = 0;
+            this.rbEnglish.TabStop = true;
+            this.rbEnglish.Text = "English";
+            this.rbEnglish.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 256);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.ClientSize = new System.Drawing.Size(391, 271);
+            this.Controls.Add(this.gbLanguage);
+            this.Controls.Add(this.gbWordTypes);
+            this.Controls.Add(this.btStart);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Starter";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmMain_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FrmMain_KeyPress);
-            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.gbWordTypes.ResumeLayout(false);
+            this.gbWordTypes.PerformLayout();
+            this.gbLanguage.ResumeLayout(false);
+            this.gbLanguage.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuFlatButton btFarsi;
-        private Bunifu.Framework.UI.BunifuFlatButton btEnglish;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.Button btStart;
+        private System.Windows.Forms.GroupBox gbWordTypes;
+        private System.Windows.Forms.RadioButton rbText;
+        private System.Windows.Forms.RadioButton rbSimple;
+        private System.Windows.Forms.RadioButton rbAdvance;
+        private System.Windows.Forms.GroupBox gbLanguage;
+        private System.Windows.Forms.RadioButton rbFrench;
+        private System.Windows.Forms.RadioButton rbPersian;
+        private System.Windows.Forms.RadioButton rbEnglish;
     }
 }

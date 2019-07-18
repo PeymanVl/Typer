@@ -5,12 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Bunifu.Framework.UI;
+
 using Typer.Classes;
 
 namespace Typer.Forms
 {
-    public partial class FrmFarsi : BunifuForm
+    public partial class FrmFarsi : Form
     {
         private bool _clicked;
 

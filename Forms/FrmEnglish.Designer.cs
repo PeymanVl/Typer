@@ -41,7 +41,7 @@ namespace Typer.Forms
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlEnglish = new System.Windows.Forms.Panel();
             this.lbtime = new System.Windows.Forms.Label();
-            this.btClock = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btClock = new System.Windows.Forms.Button();
             this.lbLang = new System.Windows.Forms.Label();
             this.txtWords = new System.Windows.Forms.RichTextBox();
             this.txtInput = new System.Windows.Forms.RichTextBox();
@@ -147,28 +147,18 @@ namespace Typer.Forms
             // 
             // btClock
             // 
-            this.btClock.ActiveBorderThickness = 1;
-            this.btClock.ActiveCornerRadius = 20;
-            this.btClock.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btClock.ActiveForecolor = System.Drawing.Color.White;
-            this.btClock.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(240)))));
             this.btClock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
-            this.btClock.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btClock.BackgroundImage")));
-            this.btClock.ButtonText = "New";
-            this.btClock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btClock.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btClock.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btClock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btClock.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btClock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
-            this.btClock.IdleBorderThickness = 1;
-            this.btClock.IdleCornerRadius = 20;
-            this.btClock.IdleFillColor = System.Drawing.Color.White;
-            this.btClock.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
-            this.btClock.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
             this.btClock.Location = new System.Drawing.Point(231, 278);
             this.btClock.Margin = new System.Windows.Forms.Padding(5);
             this.btClock.Name = "btClock";
             this.btClock.Size = new System.Drawing.Size(199, 64);
             this.btClock.TabIndex = 41;
-            this.btClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btClock.Text = "New";
+            this.btClock.UseVisualStyleBackColor = false;
             this.btClock.Click += new System.EventHandler(this.btnClock_Click);
             // 
             // lbLang
@@ -203,7 +193,7 @@ namespace Typer.Forms
             // 
             this.txtInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.txtInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtInput.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput.Font = new System.Drawing.Font("Times New Roman", 24F);
             this.txtInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
             this.txtInput.Location = new System.Drawing.Point(22, 222);
             this.txtInput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -223,6 +213,7 @@ namespace Typer.Forms
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -255,7 +246,7 @@ namespace Typer.Forms
         private PictureBox pictureBox1;
         private RichTextBox txtInput;
         private Label lbtime;
-        private Bunifu.Framework.UI.BunifuThinButton2 btClock;
+        private Button btClock;
     }
 }
 

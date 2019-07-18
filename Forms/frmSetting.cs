@@ -99,54 +99,10 @@ namespace Typer
         private void cbTextType_SelectedIndexChanged(object sender, EventArgs e)
         {
             Changed = true;
-            switch (cbTextType.SelectedIndex)
-            {
-                case 0:
-                    gbGeneralLanguage.Enabled = false;
-                    gbProgrammingLanguage.Enabled = false;
-                    gbCombinatorial.Enabled = false;
-                    FillDefaultData();
-
-                    break;
-                case 1:
-                    MessageBox.Show("به زودی به برنامه اضافه می شود", "فعلا پول نداریم");
-                    cbTextType.SelectedIndex = 0;
-                    return;
-                    gbGeneralLanguage.Enabled = true;
-                    gbProgrammingLanguage.Enabled = false;
-                    gbCombinatorial.Enabled = false;
-                    gbOtherSetting.Enabled = true;
-                    break;
-                case 2:
-                    MessageBox.Show("به زودی به برنامه اضافه می شود", "فعلا پول نداریم");
-                    cbTextType.SelectedIndex = 0;
-                    return;
-                    gbGeneralLanguage.Enabled = false;
-                    gbProgrammingLanguage.Enabled = true;
-                    gbCombinatorial.Enabled = false;
-                    gbOtherSetting.Enabled = true;
-                    break;
-                case 3:
-                    MessageBox.Show("به زودی به برنامه اضافه می شود", "فعلا پول نداریم");
-                    cbTextType.SelectedIndex = 0;
-                    return;
-                    gbGeneralLanguage.Enabled = false;
-                    gbProgrammingLanguage.Enabled = false;
-                    gbCombinatorial.Enabled = true;
-                    gbOtherSetting.Enabled = true;
-                    break;
-                case 4:
-                case 5:
-                    MessageBox.Show("به زودی به برنامه اضافه می شود", "فعلا پول نداریم");
-                    cbTextType.SelectedIndex = 0;
-                    return;
-                    gbOtherSetting.Enabled = false;
-                    gbGeneralLanguage.Enabled = false;
-                    gbProgrammingLanguage.Enabled = false;
-                    gbCombinatorial.Enabled = false;
-                    break;
-
-            }
+            gbGeneralLanguage.Enabled = false;
+            gbProgrammingLanguage.Enabled = false;
+            gbCombinatorial.Enabled = false;
+            FillDefaultData();
 
         }
 

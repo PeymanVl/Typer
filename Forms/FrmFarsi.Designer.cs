@@ -41,7 +41,7 @@ namespace Typer.Forms
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlFarsi = new System.Windows.Forms.Panel();
             this.lbzaman = new System.Windows.Forms.Label();
-            this.btShoru = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btShoru = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtwordsFarsi = new System.Windows.Forms.RichTextBox();
             this.txtInputFarsi = new System.Windows.Forms.RichTextBox();
@@ -122,7 +122,7 @@ namespace Typer.Forms
             // 
             // pnlFarsi
             // 
-            this.pnlFarsi.BackColor = System.Drawing.Color.Silver;
+            this.pnlFarsi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
             this.pnlFarsi.Controls.Add(this.lbzaman);
             this.pnlFarsi.Controls.Add(this.btShoru);
             this.pnlFarsi.Controls.Add(this.label1);
@@ -133,7 +133,6 @@ namespace Typer.Forms
             this.pnlFarsi.Name = "pnlFarsi";
             this.pnlFarsi.Size = new System.Drawing.Size(672, 360);
             this.pnlFarsi.TabIndex = 34;
-            this.pnlFarsi.Visible = false;
             // 
             // lbzaman
             // 
@@ -141,35 +140,24 @@ namespace Typer.Forms
             this.lbzaman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(25)))), ((int)(((byte)(40)))));
             this.lbzaman.Font = new System.Drawing.Font("Tahoma", 16F);
             this.lbzaman.ForeColor = System.Drawing.Color.White;
-            this.lbzaman.Location = new System.Drawing.Point(44, 228);
+            this.lbzaman.Location = new System.Drawing.Point(75, 286);
             this.lbzaman.Name = "lbzaman";
             this.lbzaman.Size = new System.Drawing.Size(0, 27);
             this.lbzaman.TabIndex = 30;
             // 
             // btShoru
             // 
-            this.btShoru.ActiveBorderThickness = 1;
-            this.btShoru.ActiveCornerRadius = 20;
-            this.btShoru.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btShoru.ActiveForecolor = System.Drawing.Color.White;
-            this.btShoru.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btShoru.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.btShoru.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btShoru.BackgroundImage")));
-            this.btShoru.ButtonText = "شروع";
             this.btShoru.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btShoru.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btShoru.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btShoru.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btShoru.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
-            this.btShoru.IdleBorderThickness = 1;
-            this.btShoru.IdleCornerRadius = 20;
-            this.btShoru.IdleFillColor = System.Drawing.Color.White;
-            this.btShoru.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
-            this.btShoru.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
-            this.btShoru.Location = new System.Drawing.Point(235, 274);
+            this.btShoru.Location = new System.Drawing.Point(251, 272);
             this.btShoru.Margin = new System.Windows.Forms.Padding(5);
             this.btShoru.Name = "btShoru";
-            this.btShoru.Size = new System.Drawing.Size(199, 61);
+            this.btShoru.Size = new System.Drawing.Size(183, 58);
             this.btShoru.TabIndex = 42;
-            this.btShoru.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btShoru.Text = "شروع";
+            this.btShoru.UseVisualStyleBackColor = false;
             this.btShoru.Click += new System.EventHandler(this.btShoru_Click);
             // 
             // label1
@@ -185,32 +173,32 @@ namespace Typer.Forms
             // 
             // txtwordsFarsi
             // 
-            this.txtwordsFarsi.BackColor = System.Drawing.Color.DarkGray;
-            this.txtwordsFarsi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtwordsFarsi.Font = new System.Drawing.Font("Iranian Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtwordsFarsi.ForeColor = System.Drawing.Color.Silver;
-            this.txtwordsFarsi.Location = new System.Drawing.Point(12, 53);
+            this.txtwordsFarsi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
+            this.txtwordsFarsi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtwordsFarsi.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.txtwordsFarsi.ForeColor = System.Drawing.Color.White;
+            this.txtwordsFarsi.Location = new System.Drawing.Point(49, 53);
             this.txtwordsFarsi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtwordsFarsi.Name = "txtwordsFarsi";
             this.txtwordsFarsi.ReadOnly = true;
             this.txtwordsFarsi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtwordsFarsi.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtwordsFarsi.Size = new System.Drawing.Size(634, 148);
+            this.txtwordsFarsi.Size = new System.Drawing.Size(597, 148);
             this.txtwordsFarsi.TabIndex = 36;
             this.txtwordsFarsi.TabStop = false;
             this.txtwordsFarsi.Text = "این متن فارسی است برای تست";
             // 
             // txtInputFarsi
             // 
-            this.txtInputFarsi.BackColor = System.Drawing.Color.DimGray;
+            this.txtInputFarsi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(128)))), ((int)(((byte)(197)))));
             this.txtInputFarsi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtInputFarsi.Font = new System.Drawing.Font("Iranian Sans", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtInputFarsi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(192)))), ((int)(((byte)(37)))));
-            this.txtInputFarsi.Location = new System.Drawing.Point(12, 209);
+            this.txtInputFarsi.Font = new System.Drawing.Font("Iranian Sans", 20F);
+            this.txtInputFarsi.ForeColor = System.Drawing.Color.White;
+            this.txtInputFarsi.Location = new System.Drawing.Point(50, 209);
             this.txtInputFarsi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtInputFarsi.Name = "txtInputFarsi";
             this.txtInputFarsi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtInputFarsi.Size = new System.Drawing.Size(634, 44);
+            this.txtInputFarsi.Size = new System.Drawing.Size(596, 44);
             this.txtInputFarsi.TabIndex = 38;
             this.txtInputFarsi.Text = "";
             this.txtInputFarsi.TextChanged += new System.EventHandler(this.txtInputFarsi_TextChanged);
@@ -225,6 +213,7 @@ namespace Typer.Forms
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -255,7 +244,7 @@ namespace Typer.Forms
         private RichTextBox txtwordsFarsi;
         private Label label2;
         private PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuThinButton2 btShoru;
+        private Button btShoru;
         private Label lbzaman;
     }
 }

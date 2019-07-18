@@ -54,10 +54,12 @@ namespace Typer
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.linkLabel1.Location = new System.Drawing.Point(25, 163);
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(128)))), ((int)(((byte)(197)))));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(128)))), ((int)(((byte)(197)))));
+            this.linkLabel1.Location = new System.Drawing.Point(162, 168);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(56, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(55, 19);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "بازگشت";
@@ -65,7 +67,7 @@ namespace Typer
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("IRANSans", 8.25F);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(128)))), ((int)(((byte)(197)))));
             this.label1.Location = new System.Drawing.Point(16, 117);
             this.label1.Name = "label1";
@@ -77,7 +79,7 @@ namespace Typer
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("IRANSans", 8.25F);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(128)))), ((int)(((byte)(197)))));
             this.label2.Location = new System.Drawing.Point(16, 9);
             this.label2.Name = "label2";
@@ -98,7 +100,7 @@ namespace Typer
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

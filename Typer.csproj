@@ -36,10 +36,6 @@
     <ApplicationIcon>Files\Icojam-Onebit-Puzzle.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Files\Dlls\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -51,11 +47,17 @@
   <ItemGroup>
     <Compile Include="Classes\Config.cs" />
     <Compile Include="Classes\Istaha.cs" />
-    <Compile Include="Forms\frmAbout.cs">
+    <Compile Include="Forms\FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAbout.Designer.cs">
-      <DependentUpon>frmAbout.cs</DependentUpon>
+    <Compile Include="Forms\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCharCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCharCount.Designer.cs">
+      <DependentUpon>FrmCharCount.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmFarsi.cs">
       <SubType>Form</SubType>
@@ -83,8 +85,11 @@
     <Compile Include="Forms\frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\frmAbout.resx">
-      <DependentUpon>frmAbout.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCharCount.resx">
+      <DependentUpon>FrmCharCount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmFarsi.resx">
       <DependentUpon>FrmFarsi.cs</DependentUpon>
